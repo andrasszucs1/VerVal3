@@ -26,7 +26,7 @@ public class Employer {
         this.activityDomains = activityDomains;
     }
 
-    internal Employer Clone()
+    internal Employer clone()
     {
         return new Employer(taxId, address, ownerName, new List<int>(activityDomains));
     }
