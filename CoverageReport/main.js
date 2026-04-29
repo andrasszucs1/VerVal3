@@ -297,7 +297,7 @@ var assemblies = [
       { "name": "DatesAndStuff.Models.LocalTaxData", "rp": "DatesAndStuff_LocalTaxData.html", "cl": 7, "ucl": 3, "cal": 10, "tl": 28, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DatesAndStuff.Models.Person", "rp": "DatesAndStuff_Person.html", "cl": 47, "ucl": 0, "cal": 47, "tl": 86, "cb": 2, "tb": 2, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
       { "name": "DatesAndStuff.Models.TaxItem", "rp": "DatesAndStuff_TaxItem.html", "cl": 2, "ucl": 1, "cal": 3, "tl": 9, "cb": 0, "tb": 0, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
-      { "name": "DatesAndStuff.SimulationTime", "rp": "DatesAndStuff_SimulationTime.html", "cl": 44, "ucl": 90, "cal": 134, "tl": 287, "cb": 5, "tb": 20, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
+      { "name": "DatesAndStuff.SimulationTime", "rp": "DatesAndStuff_SimulationTime.html", "cl": 46, "ucl": 88, "cal": 134, "tl": 287, "cb": 5, "tb": 20, "cm": 0, "fcm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "mfch": [], "hc": [], "metrics": { } },
     ]},
 ];
 

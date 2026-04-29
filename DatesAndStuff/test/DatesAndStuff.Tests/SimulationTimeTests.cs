@@ -177,6 +177,25 @@ namespace DatesAndStuff.Tests
                 Assert.AreEqual(expectedDateTime, result.ToAbsoluteDateTime());
             }
         }
+        [Test]
+        public void NextMillisec_ShouldIncreaseByOne()
+        {
+            var sut = new SimulationTime(2026, 2, 26);
+
+            var next = sut.NextMillisec;
+
+            Assert.AreEqual(sut.TotalMilliseconds + 1, next.TotalMilliseconds);
+        }
+
+        [Test]
+        public void PreviousMillisec_ShouldDecreaseByOne()
+        {
+            var sut = new SimulationTime(2026, 2, 26);
+
+            var prev = sut.PreviousMillisec;
+
+            Assert.AreEqual(sut.TotalMilliseconds - 1, prev.TotalMilliseconds);
+        }
 
         [Test]
         // Next millisec calculation works
