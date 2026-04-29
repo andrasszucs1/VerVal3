@@ -23,11 +23,12 @@ jobs:
       - name: Build
         run: dotnet build --no-restore
 
-      - name: Run tests with coverage
+      - name: Run tests with coverage (OpenCover)
         run: |
-          dotnet test --no-build \
-            --collect:"XPlat Code Coverage" \
-            --results-directory ./TestResults
+          dotnet test --no-build --verbosity normal \
+          --collect:"XPlat Code Coverage;Format=opencover" \
+          --logger trx \
+          --results-directory ./TestResults
 
       - name: Install reportgenerator
         run: dotnet tool install -g dotnet-reportgenerator-globaltool
@@ -35,7 +36,7 @@ jobs:
       - name: Generate HTML coverage report
         run: |
           reportgenerator \
-            -reports:./TestResults/**/coverage.cobertura.xml \
+            -reports:./TestResults/**/coverage.opencover.xml \
             -targetdir:./CoverageReport \
             -reporttypes:Html
 
